@@ -1,0 +1,346 @@
+:root {
+  --main-board-color: rgb(255, 127, 80);
+  --main-page-margin: 10px;
+}
+/* Style for our header texts
+* --------------------------------------- */
+h1 {
+	font-size: 4em;
+	font-family: 'Lato';
+	color: rgb(0, 0, 0);
+	margin:0;
+	padding:0;
+}
+p {
+  margin: 0;
+  color: rgb(247, 0, 0);
+	padding: 0;
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+/* .section{
+	text-align:center;
+} */
+
+/* Overwriting styles for control arrows for slides
+* --------------------------------------- */
+.controlArrow.prev {
+	left: 50px;
+}
+.controlArrow.next {
+	right: 50px;
+}
+
+/* Backgrounds will cover all the section
+* --------------------------------------- */
+.section {
+	background-size: cover;
+}
+.slide {
+	background-size: cover;
+}
+
+/* Defining each section background and styles
+* --------------------------------------- */
+/* Introduction
+* --------------------------------------- */
+#title {
+	background-image: url(../imgs/title_background.jpg);
+}
+#title_text {
+	top: 5%;
+	left: 3%;
+	position: relative;
+}
+#title_text h1,h3 {
+	padding: 0;
+	margin: 0;
+}
+/* About the Visualization
+* --------------------------------------- */
+#about {
+	background-image: url(../imgs/background.jpeg);
+	padding: 3% 3% 3% 3%;
+}
+#background_bw {
+	background-image: url(../imgs/background.jpeg);
+	padding: 3% 3% 3% 3%;
+}
+/* Bar Chart Page
+* --------------------------------------- */
+#barChart_title {
+  margin: var(--main-page-margin);
+  border: 1px solid var(--main-board-color);
+}
+
+#barChart_content {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-55%);
+
+  margin: var(--main-page-margin);
+  border: 1px solid var(--main-board-color);
+}
+
+#barChart_text {
+  left: 5%;
+  padding: 10px;
+  width: 80%;
+  margin: 30px;
+
+  float: left;
+  background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+  background: rgba(255, 255, 255, 0.7);	 
+  border: 1px solid var(--main-board-color); 
+}
+
+#barChart_container {
+  width: 250px;
+  height: 520px;
+  width: 45%;
+  margin: 10px;
+
+  float: left;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid var(--main-board-color);
+}
+#barChart {
+  text-align: center;
+}
+
+/* pie Chart Page
+* --------------------------------------- */
+
+#pieChart_container {
+  width: 250px;
+  height: 520px;
+  width: 45%;
+  margin: 10px;
+
+  float: left;
+  background-color: rgba(17, 190, 147, 0);
+  border: 1px solid var(--main-board-color);
+}
+#pieChart {
+  text-align: center;
+}
+/* US Map Page
+* --------------------------------------- */
+#usMap_title {
+  margin: var(--main-page-margin);
+  border: 1px solid var(--main-board-color);
+}
+
+#usMap_content {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-55%);
+
+  margin: var(--main-page-margin);
+  border: 1px solid var(--main-board-color);
+}
+
+#usMap_text {
+  left: 5%;
+  padding: 10px;
+  width: 80%;
+  margin: 30px;
+
+  float: left;
+  background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+  background: rgba(255, 255, 255, 0.7);	 
+  border: 1px solid var(--main-board-color); 
+}
+
+#statesvg {
+  width: 500px;
+  height: 650px;
+  width: 55%;
+  margin: 10px;
+
+  float: left;
+  background-color: rgba(143, 18, 18, 0);
+  border: 1px solid var(--main-board-color);
+}
+#usMap_container {
+  width: 500px;
+  height: 650px;
+  width: 40%;
+  margin: 10px;
+
+  float: left;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid var(--main-board-color);
+}
+#usMap {
+  text-align: center;
+}
+/* Circular Chart Page
+* --------------------------------------- */
+#circularChart_title {
+  margin: var(--main-page-margin);
+  border: 1px solid var(--main-board-color);
+}
+
+#circularChart_content {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-55%);
+
+  margin: var(--main-page-margin);
+  border: 1px solid var(--main-board-color);
+}
+
+#circularChart_text {
+  left: 5%;
+  padding: 10px;
+  width: 20%;
+  margin: 30px;
+
+  float: left;
+  background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+  background: rgba(255, 255, 255, 0.7);	 
+  border: 1px solid var(--main-board-color); 
+}
+
+#circularChart_container {
+  width: 1024px;
+  height: 520px;
+  width: 85%;
+  margin: 10px;
+
+  float: left;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid var(--main-board-color);
+}
+#circularChart{
+  text-align: center;
+}
+/* Scatter Plot Page
+* --------------------------------------- */
+#scatterPlot_title {
+  margin: var(--main-page-margin);
+  border: 1px solid var(--main-board-color);
+}
+
+#scatterPlot_content {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-55%);
+
+  margin: var(--main-page-margin);
+  border: 1px solid var(--main-board-color);
+}
+
+#scatterPlot_text {
+  left: 5%;
+  padding: 10px;
+  width: 20%;
+  margin: 30px;
+
+  float: left;
+  background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+  background: rgba(255, 255, 255, 0.7);	 
+  border: 1px solid var(--main-board-color); 
+}
+
+#scatterPlot_container {
+  width: 1024px;
+  height: 520px;
+  width: 90%;
+  margin: 10px;
+
+  float: left;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid var(--main-board-color);
+}
+#scatterPlot {
+  text-align: center;
+}
+/* Donut Chart Page
+* --------------------------------------- */
+#donutChart_title {
+  margin: var(--main-page-margin);
+  border: 1px solid var(--main-board-color);
+}
+
+#donutChart_content {
+  position: absolute;
+  top: 55%;
+  transform: translate(0%, -55%);
+  text-align: center;
+  margin: var(--main-page-margin);
+  border: 1px solid var(--main-board-color);
+}
+
+#donutChart_text {
+  left: 5%;
+  padding: 10px;
+  width: 20%;
+  margin: 30px;
+
+  float: left;
+  background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+  background: rgba(255, 255, 255, 0.7);	 
+  border: 1px solid var(--main-board-color); 
+}
+
+#donutChart_container {
+  width: 1024px;
+  height: 520px;
+  width: 90%;
+  margin: 10px;
+
+  float: left;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid var(--main-board-color);
+}
+#donutChart {
+  text-align: center;
+}
+/* Findings
+* --------------------------------------- */
+#analytics{
+	background-image: url(../imgs/analytics.jpg);
+	padding: 3% 60% 6% 6%;
+}
+/* References
+* --------------------------------------- */
+#acks {
+	background-image: url(../imgs/table.jpg);
+	padding: 3% 52% 6% 6%;
+}
+#content_div, #acks_div {
+	padding: 10px;
+    background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+    background: rgba(255, 255, 255, 0.6);	
+}
+#content_div, #acks_div h1,h2,h3,p {
+    font-weight: bold;
+    color: rgb(46, 37, 119);
+}
+/* Style for links */
+#acks_div ul {
+	list-style-image: url('../imgs/link.ico')
+}
+#acks_div a {
+	color: rgba(35, 35, 35, 0.8);
+	text-decoration:none;
+	border-bottom: 2px solid #ef8b80;
+	box-shadow: inset 0 -4px 0 #ef8b80;
+	transition: background 0.1s cubic-bezier(.33,.66,.66,1);
+}
+#acks_div a:hover {
+  	background: #ef8b80;
+} 
+
+#emphasize {
+	color: green;
+	font-style: bolder;
+}
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu li a {
+	color: #000;
+}

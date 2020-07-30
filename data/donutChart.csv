@@ -1,0 +1,5 @@
+Reason,Percent,Deaths,Top1 State,Top2 State,Top3 State,color
+Forgotten By Caregiver,0.542,460,Texas ,Florida ,California ,3
+Gained Access On Their Own,0.252,214,Texas ,Florida ,California ,1
+Knowingly Left By Caregiver,0.191,162,Texas ,California ,Georgia ,5
+Unknown,0.015,13,Georgia ,Missouri ,Texas ,0

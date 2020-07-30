@@ -1,0 +1,855 @@
+id,state,region,year,age,temperature,gender
+AR,Arkansas,South,1998,0.33,77,F
+NJ,New Jersey,Northeast,1998,0.33,86,F
+CA,California,West,1998,0.5,75,M
+CA,California,West,1998,0.5,93,F
+OH,Ohio,Midwest,1998,0.5,84,F
+NV,Nevada,West,1998,0.58,108,M
+VA,Virginia,South,1998,0.67,82,M
+FL,Florida,South,1998,0.75,110,M
+PA,Pennsylvania,Northeast,1998,0.75,76,F
+IL,Illinois,Midwest,1998,0.83,85,M
+LA,Louisiana,South,1998,0.83,80,F
+OK,Oklahoma,South,1999,0.13,101,M
+CA,California,West,1999,0.42,96,F
+MI,Michigan,Midwest,1999,0.42,88,M
+NM,New Mexico,West,1999,0.63,95,M
+TX,Texas,South,1999,0.67,104,M
+KY,Kentucky,South,1999,0.92,79,M
+IA,Iowa,Midwest,2000,0.17,81,M
+CA,California,West,2000,0.33,115,M
+TX,Texas,South,2000,0.33,96,F
+IL,Illinois,Midwest,2000,0.42,69,F
+MA,Massachusetts,Northeast,2000,0.42,75,F
+MO,Missouri,Midwest,2000,0.42,78,F
+MO,Missouri,Midwest,2000,0.42,78,F
+MS,Mississippi,South,2000,0.42,80,
+CA,California,West,2000,0.5,100,F
+IL,Illinois,Midwest,2000,0.67,79,M
+VA,Virginia,South,2000,0.75,84,M
+AL,Alabama,South,2000,0.83,90,M
+AL,Alabama,South,2000,0.83,90,F
+IL,Illinois,Midwest,2000,0.83,87,M
+CA,California,West,2001,0.01,86,F
+MN,Minnesota,Midwest,2001,0.33,87,M
+CA,California,West,2001,0.42,86,M
+TX,Texas,South,2001,0.42,73,M
+NC,North Carolina,South,2001,0.5,95,M
+NV,Nevada,West,2001,0.5,108,M
+IA,Iowa,Midwest,2001,0.58,90,F
+MO,Missouri,Midwest,2001,0.58,60,F
+NV,Nevada,West,2001,0.75,95,M
+KY,Kentucky,South,2001,0.83,81,F
+TN,Tennessee,South,2001,0.83,66,F
+MN,Minnesota,Midwest,2001,0.92,60,M
+CA,California,West,2002,0.15,63,M
+NC,North Carolina,South,2002,0.25,88,M
+OH,Ohio,Midwest,2002,0.25,63,M
+CA,California,West,2002,0.33,89,M
+MD,Maryland,South,2002,0.33,79,M
+CA,California,West,2002,0.42,86,F
+FL,Florida,South,2002,0.42,91,M
+TX,Texas,South,2002,0.5,73,M
+TX,Texas,South,2002,0.5,90,F
+FL,Florida,South,2002,0.58,90,M
+GA,Georgia,South,2002,0.67,82,F
+OH,Ohio,Midwest,2002,0.75,83,M
+TX,Texas,South,2002,0.75,90,M
+MI,Michigan,Midwest,2002,0.83,80,F
+VA,Virginia,South,2002,0.92,90,M
+ID,Idaho,West,2003,0.17,100,M
+TX,Texas,South,2003,0.17,93,F
+FL,Florida,South,2003,0.33,90,F
+TX,Texas,South,2003,0.33,97,M
+OK,Oklahoma,South,2003,0.42,99,M
+AZ,Arizona,West,2003,0.5,96,M
+WI,Wisconsin,Midwest,2003,0.5,79,F
+NV,Nevada,West,2003,0.58,98,M
+MS,Mississippi,South,2003,0.67,90,M
+TX,Texas,South,2003,0.67,98,M
+CA,California,West,2003,0.83,90,M
+FL,Florida,South,2003,0.83,84,F
+HI,Hawaii,West,2003,0.83,88,F
+FL,Florida,South,2004,0.08,89,M
+FL,Florida,South,2004,0.25,93,F
+AZ,Arizona,West,2004,0.33,97,M
+AZ,Arizona,West,2004,0.33,102,F
+FL,Florida,South,2004,0.33,79,F
+CA,California,West,2004,0.42,93,F
+NY,New York,Northeast,2004,0.5,70,F
+OK,Oklahoma,South,2004,0.5,90,M
+AZ,Arizona,West,2004,0.58,110,M
+NJ,New Jersey,Northeast,2004,0.58,60,M
+OR,Oregon,West,2004,0.58,70,M
+TN,Tennessee,South,2004,0.67,88,F
+VA,Virginia,South,2004,0.67,79,M
+FL,Florida,South,2004,0.75,80,F
+KY,Kentucky,South,2004,0.92,72,M
+NC,North Carolina,South,2004,0.92,88,M
+OK,Oklahoma,South,2005,0.17,92,F
+MI,Michigan,Midwest,2005,0.25,87,M
+SC,South Carolina,South,2005,0.25,78,M
+FL,Florida,South,2005,0.33,89,F
+NJ,New Jersey,Northeast,2005,0.33,70,F
+MD,Maryland,South,2005,0.42,86,M
+TN,Tennessee,South,2005,0.42,91,M
+TX,Texas,South,2005,0.5,97,F
+FL,Florida,South,2005,0.67,86,F
+KY,Kentucky,South,2005,0.75,94,M
+OH,Ohio,Midwest,2005,0.75,73,M
+AL,Alabama,South,2005,0.83,92,F
+VA,Virginia,South,2005,0.83,69,F
+GA,Georgia,South,2006,0.08,94,M
+ND,North Dakota,Midwest,2006,0.42,78,F
+TX,Texas,South,2006,0.42,97,F
+TX,Texas,South,2006,0.67,86,F
+TX,Texas,South,2006,0.83,103,M
+AZ,Arizona,West,2007,0.25,108,F
+MO,Missouri,Midwest,2007,0.33,84,F
+GA,Georgia,South,2007,0.42,91,F
+NY,New York,Northeast,2007,0.42,94,M
+GA,Georgia,South,2007,0.58,81,M
+KS,Kansas,Midwest,2007,0.58,91,F
+MO,Missouri,Midwest,2007,0.58,99,F
+AL,Alabama,South,2007,0.67,88,F
+MS,Mississippi,South,2007,0.75,91,F
+VA,Virginia,South,2007,0.75,66,M
+CA,California,West,2007,0.83,78,F
+SC,South Carolina,South,2007,0.83,77,M
+CA,California,West,2007,0.92,81,F
+GA,Georgia,South,2008,0.12,101,M
+TN,Tennessee,South,2008,0.25,90,F
+AZ,Arizona,West,2008,0.33,76,M
+WI,Wisconsin,Midwest,2008,0.33,81,M
+UT,Utah,West,2008,0.42,92,M
+TX,Texas,South,2008,0.58,83,F
+TX,Texas,South,2008,0.58,88,F
+FL,Florida,South,2008,0.67,88,F
+LA,Louisiana,South,2008,0.67,84,F
+TX,Texas,South,2008,0.67,82,M
+GA,Georgia,South,2008,0.75,84,F
+NC,North Carolina,South,2008,0.75,73,F
+OH,Ohio,Midwest,2008,0.92,90,F
+FL,Florida,South,2009,0.25,87,F
+FL,Florida,South,2009,0.25,92,M
+KS,Kansas,Midwest,2009,0.25,97,F
+CA,California,West,2009,0.33,67,M
+WI,Wisconsin,Midwest,2009,0.33,57,M
+FL,Florida,South,2009,0.42,90,M
+FL,Florida,South,2009,0.42,91,M
+FL,Florida,South,2009,0.42,91,F
+TX,Texas,South,2009,0.58,91,F
+TX,Texas,South,2009,0.58,93,M
+AZ,Arizona,West,2010,0.17,96,F
+TX,Texas,South,2010,0.25,103,F
+KY,Kentucky,South,2010,0.42,94,F
+SD,South Dakota,Midwest,2010,0.42,90,M
+FL,Florida,South,2010,0.5,92,F
+CA,California,West,2010,0.58,72,F
+TX,Texas,South,2010,0.58,80,F
+NY,New York,Northeast,2010,0.75,91,F
+OH,Ohio,Midwest,2010,0.75,87,F
+TX,Texas,South,2010,0.92,94,F
+MS,Mississippi,South,2011,0.25,91,M
+GA,Georgia,South,2011,0.33,90,F
+IN,Indiana,Midwest,2011,0.42,82,F
+LA,Louisiana,South,2011,0.42,80,F
+TX,Texas,South,2011,0.5,79,F
+TX,Texas,South,2011,0.5,84,F
+SC,South Carolina,South,2011,0.67,98,M
+WI,Wisconsin,Midwest,2011,0.67,51,F
+TX,Texas,South,2011,0.83,100,F
+TX,Texas,South,2012,0.17,87,M
+AZ,Arizona,West,2012,0.33,113,F
+IN,Indiana,Midwest,2012,0.33,105,F
+TN,Tennessee,South,2012,0.42,91,M
+VA,Virginia,South,2012,0.42,82,M
+FL,Florida,South,2012,0.5,88,F
+LA,Louisiana,South,2012,0.5,96,F
+TX,Texas,South,2012,0.5,81,M
+TX,Texas,South,2012,0.58,83,M
+KY,Kentucky,South,2012,0.67,89,M
+MA,Massachusetts,Northeast,2012,0.75,83,M
+LA,Louisiana,South,2012,0.92,99,M
+OK,Oklahoma,South,2013,0.06,98,F
+AZ,Arizona,West,2013,0.25,103,M
+NC,North Carolina,South,2013,0.25,84,M
+VA,Virginia,South,2013,0.25,76,F
+AL,Alabama,South,2013,0.33,88,M
+CA,California,West,2013,0.33,84,M
+CA,California,West,2013,0.42,82,M
+MN,Minnesota,Midwest,2013,0.42,82,F
+TX,Texas,South,2013,0.42,78,F
+TX,Texas,South,2013,0.5,93,F
+NY,New York,Northeast,2013,0.58,85,M
+FL,Florida,South,2013,0.67,96,F
+VA,Virginia,South,2013,0.67,88,M
+AL,Alabama,South,2013,0.92,90,F
+FL,Florida,South,2013,0.92,84,M
+NC,North Carolina,South,2014,0.08,88,M
+NC,North Carolina,South,2014,0.17,80,F
+OK,Oklahoma,South,2014,0.17,84,F
+MD,Maryland,South,2014,0.5,91,F
+OR,Oregon,West,2014,0.5,69,F
+AZ,Arizona,West,2014,0.58,89,F
+TX,Texas,South,2014,0.67,93,M
+CA,California,West,2014,0.75,80,M
+FL,Florida,South,2014,0.75,93,F
+KS,Kansas,Midwest,2014,0.83,90,F
+UT,Utah,West,2014,0.92,90,F
+TX,Texas,South,2015,0.25,98,M
+TX,Texas,South,2015,0.33,89,M
+OK,Oklahoma,South,2015,0.42,91,F
+FL,Florida,South,2015,0.5,86,M
+AZ,Arizona,West,2015,0.58,107,F
+GA,Georgia,South,2015,0.67,93,F
+OH,Ohio,Midwest,2015,0.67,77,M
+MO,Missouri,Midwest,2015,0.83,92,M
+FL,Florida,South,2015,0.92,90,M
+GA,Georgia,South,2015,0.92,90,M
+OK,Oklahoma,South,2016,0.12,87,M
+NY,New York,Northeast,2016,0.33,77,M
+OK,Oklahoma,South,2016,0.33,96,F
+AZ,Arizona,West,2016,0.42,86,M
+IA,Iowa,Midwest,2016,0.5,91,M
+TX,Texas,South,2016,0.5,93,F
+TX,Texas,South,2016,0.5,101,M
+AL,Alabama,South,2016,0.58,92,M
+AL,Alabama,South,2016,0.58,94,UNK
+TX,Texas,South,2016,0.58,84,F
+LA,Louisiana,South,2016,0.67,91,F
+MS,Mississippi,South,2016,0.67,88,F
+NC,North Carolina,South,2016,0.75,86,M
+CA,California,West,2016,0.92,79,M
+FL,Florida,South,2016,0.92,88,F
+MO,Missouri,Midwest,2016,0.92,82,F
+FL,Florida,South,2017,0.13,89,M
+OK,Oklahoma,South,2017,0.33,86,F
+WY,Wyoming,West,2017,0.33,84,M
+ID,Idaho,West,2017,0.42,75,F
+KY,Kentucky,South,2017,0.42,89,F
+GA,Georgia,South,2017,0.5,85,M
+AZ,Arizona,West,2017,0.58,101,M
+TX,Texas,South,2017,0.58,96,M
+LA,Louisiana,South,2017,0.67,89,M
+ID,Idaho,West,2017,0.83,85,F
+LA,Louisiana,South,2017,0.92,90,F
+TN,Tennessee,South,2017,0.92,90,F
+MO,Missouri,Midwest,2018,0.13,94,F
+OH,Ohio,Midwest,2018,0.16,93,M
+MO,Missouri,Midwest,2018,0.19,91,F
+IN,Indiana,Midwest,2018,0.25,90,M
+VA,Virginia,South,2018,0.42,83,M
+VA,Virginia,South,2018,0.42,83,F
+LA,Louisiana,South,2018,0.5,91,F
+OH,Ohio,Midwest,2018,0.5,93,F
+TX,Texas,South,2018,0.5,96,F
+VA,Virginia,South,2018,0.5,90,M
+GA,Georgia,South,2018,0.58,92,M
+NC,North Carolina,South,2018,0.58,87,M
+SC,South Carolina,South,2018,0.58,93,M
+TX,Texas,South,2018,0.58,99,F
+TX,Texas,South,2018,0.67,91,F
+AZ,Arizona,West,2018,0.75,71,F
+FL,Florida,South,2018,0.75,94,M
+MS,Mississippi,South,2018,0.83,89,M
+SC,South Carolina,South,2018,0.83,84,M
+KY,Kentucky,South,2019,0.17,85,M
+KS,Kansas,Midwest,2019,0.25,79,F
+AZ,Arizona,West,2019,0.33,93,F
+FL,Florida,South,2019,0.33,95,F
+TN,Tennessee,South,2019,0.5,86,M
+UT,Utah,West,2019,0.5,89,M
+NC,North Carolina,South,2019,0.75,86,M
+TX,Texas,South,2019,0.75,93,F
+VA,Virginia,South,2019,0.83,93,F
+AL,Alabama,South,2019,0.92,81,M
+MO,Missouri,Midwest,2019,0.92,88,F
+TX,Texas,South,2019,0.92,98,F
+FL,Florida,South,2020,0.83,90,F
+VA,Virginia,South,2020,0.92,86,F
+AR,Arkansas,South,1998,1.33,77,F
+LA,Louisiana,South,1998,1.5,97,M
+PA,Pennsylvania,Northeast,1998,1.75,85,F
+FL,Florida,South,1998,1.92,89,M
+CA,California,West,1999,1.25,85,F
+MS,Mississippi,South,1999,1.25,77,F
+FL,Florida,South,1999,1.5,85,M
+IL,Illinois,Midwest,1999,1.5,92,M
+TX,Texas,South,1999,1.5,90,M
+TX,Texas,South,1999,1.5,92,F
+TN,Tennessee,South,1999,1.83,92,F
+NJ,New Jersey,Northeast,2000,1.08,65,M
+FL,Florida,South,2000,1.33,82,M
+AZ,Arizona,West,2000,1.75,107,F
+GA,Georgia,South,2001,1,88,F
+MO,Missouri,Midwest,2001,1,98,F
+CO,Colorado,West,2001,1.08,70,M
+CA,California,West,2001,1.17,90,M
+KS,Kansas,Midwest,2001,1.17,90,M
+FL,Florida,South,2001,1.33,81,M
+MO,Missouri,Midwest,2001,1.58,107,F
+CA,California,West,2001,1.83,115,F
+TX,Texas,South,2001,1.83,90,F
+TX,Texas,South,2001,1.92,93,M
+LA,Louisiana,South,2002,1.58,92,F
+VA,Virginia,South,2002,1.58,82,F
+PA,Pennsylvania,Northeast,2002,1.67,96,F
+FL,Florida,South,2002,1.92,94,M
+IN,Indiana,Midwest,2003,1,85,F
+NJ,New Jersey,Northeast,2003,1,90,M
+TX,Texas,South,2003,1.17,97,M
+GA,Georgia,South,2003,1.25,71,F
+AZ,Arizona,West,2003,1.42,105,F
+TX,Texas,South,2003,1.5,90,F
+TX,Texas,South,2003,1.75,90,F
+KS,Kansas,Midwest,2003,1.83,109,F
+TN,Tennessee,South,2003,1.83,90,M
+FL,Florida,South,2004,1,88,M
+GA,Georgia,South,2004,1,87,M
+HI,Hawaii,West,2004,1,89,F
+TX,Texas,South,2004,1.5,95,F
+WV,West Virginia,South,2004,1.5,75,M
+CT,Connecticut,Northeast,2004,1.58,107,F
+FL,Florida,South,2004,1.67,90,M
+NC,North Carolina,South,2004,1.67,81,F
+TX,Texas,South,2004,1.67,84,M
+MS,Mississippi,South,2004,1.83,86,M
+IA,Iowa,Midwest,2005,1,93,F
+MA,Massachusetts,Northeast,2005,1,82,F
+MD,Maryland,South,2005,1,93,M
+TX,Texas,South,2005,1,93,M
+SD,South Dakota,Midwest,2005,1.08,94,M
+MN,Minnesota,Midwest,2005,1.25,83,F
+NV,Nevada,West,2005,1.33,104,M
+GA,Georgia,South,2005,1.58,92,M
+OK,Oklahoma,South,2005,1.67,91,M
+AZ,Arizona,West,2005,1.83,115,F
+AR,Arkansas,South,2006,1.17,94,M
+FL,Florida,South,2006,1.17,80,F
+SC,South Carolina,South,2006,1.25,75,M
+TN,Tennessee,South,2006,1.25,100,M
+KY,Kentucky,South,2006,1.5,81,M
+FL,Florida,South,2006,1.75,91,M
+OK,Oklahoma,South,2006,1.75,96,M
+FL,Florida,South,2006,1.92,92,F
+KS,Kansas,Midwest,2006,1.92,102,M
+SC,South Carolina,South,2007,1,88,M
+ID,Idaho,West,2007,1.25,98,M
+TN,Tennessee,South,2007,1.25,89,M
+AZ,Arizona,West,2007,1.42,89,M
+TN,Tennessee,South,2007,1.5,89,F
+MO,Missouri,Midwest,2007,1.58,94,F
+MS,Mississippi,South,2007,1.58,92,M
+AR,Arkansas,South,2007,1.83,84,F
+FL,Florida,South,2007,1.83,87,F
+FL,Florida,South,2007,1.83,94,F
+VA,Virginia,South,2007,1.92,88,M
+PA,Pennsylvania,Northeast,2008,1.17,98,M
+TX,Texas,South,2008,1.17,102,M
+PA,Pennsylvania,Northeast,2008,1.25,83,F
+AR,Arkansas,South,2008,1.33,91,F
+NC,North Carolina,South,2008,1.5,90,F
+TX,Texas,South,2008,1.5,88,F
+UT,Utah,West,2008,1.5,77,M
+TX,Texas,South,2008,1.58,102,F
+VA,Virginia,South,2008,1.75,96,M
+CA,California,West,2008,1.92,96,M
+FL,Florida,South,2009,1,92,M
+IL,Illinois,Midwest,2009,1,89,F
+LA,Louisiana,South,2009,1,89,M
+VA,Virginia,South,2009,1.08,84,M
+WA,Washington,West,2009,1.08,69,M
+FL,Florida,South,2009,1.42,91,F
+NC,North Carolina,South,2009,1.42,81,M
+TX,Texas,South,2009,1.42,96,M
+FL,Florida,South,2009,1.5,88,M
+TX,Texas,South,2009,1.5,104,M
+FL,Florida,South,2009,1.67,89,M
+MD,Maryland,South,2009,1.92,87,F
+AR,Arkansas,South,2010,1.17,96,F
+FL,Florida,South,2010,1.17,88,F
+WI,Wisconsin,Midwest,2010,1.33,87,M
+FL,Florida,South,2010,1.5,73,F
+MS,Mississippi,South,2010,1.5,93,F
+TN,Tennessee,South,2010,1.5,100,F
+TX,Texas,South,2010,1.5,92,M
+TX,Texas,South,2010,1.5,92,M
+AL,Alabama,South,2010,1.58,98,F
+AZ,Arizona,West,2010,1.75,108,F
+GA,Georgia,South,2010,1.75,86,M
+MD,Maryland,South,2011,1,93,F
+TX,Texas,South,2011,1,98,F
+OH,Ohio,Midwest,2011,1.08,92,F
+FL,Florida,South,2011,1.17,91,M
+MA,Massachusetts,Northeast,2011,1.42,82,M
+TX,Texas,South,2011,1.42,99,F
+VA,Virginia,South,2011,1.67,94,M
+FL,Florida,South,2011,1.83,90,M
+FL,Florida,South,2012,1,92,F
+MO,Missouri,Midwest,2012,1.08,89,M
+TX,Texas,South,2012,1.25,91,M
+AR,Arkansas,South,2012,1.33,96,F
+OK,Oklahoma,South,2012,1.5,64,F
+AZ,Arizona,West,2013,1,99,M
+TX,Texas,South,2013,1,90,F
+TX,Texas,South,2013,1,93,M
+CA,California,West,2013,1.25,100,M
+MD,Maryland,South,2013,1.33,89,F
+MI,Michigan,Midwest,2013,1.33,97,M
+FL,Florida,South,2013,1.5,94,F
+VA,Virginia,South,2013,1.67,76,M
+ID,Idaho,West,2013,1.75,91,F
+IL,Illinois,Midwest,2013,1.92,91,M
+SC,South Carolina,South,2014,1.08,84,M
+SC,South Carolina,South,2014,1.08,93,F
+CT,Connecticut,Northeast,2014,1.25,88,M
+NY,New York,Northeast,2014,1.25,73,F
+MD,Maryland,South,2014,1.42,84,M
+TX,Texas,South,2014,1.42,84,F
+MD,Maryland,South,2014,1.5,93,F
+GA,Georgia,South,2014,1.83,91,M
+MD,Maryland,South,2015,1.08,84,F
+FL,Florida,South,2015,1.33,91,F
+TX,Texas,South,2015,1.42,102,M
+FL,Florida,South,2015,1.5,82,F
+LA,Louisiana,South,2015,1.83,92,F
+TX,Texas,South,2016,1,91,M
+GA,Georgia,South,2016,1.08,52,M
+GA,Georgia,South,2016,1.25,91,F
+GA,Georgia,South,2016,1.25,91,F
+KS,Kansas,Midwest,2016,1.5,94,F
+FL,Florida,South,2016,1.92,92,M
+AL,Alabama,South,2017,1,68,M
+AZ,Arizona,West,2017,1,103,M
+FL,Florida,South,2017,1,82,M
+GA,Georgia,South,2017,1,93,F
+MO,Missouri,Midwest,2017,1,81,M
+SC,South Carolina,South,2017,1,91,M
+TX,Texas,South,2017,1,87,F
+AL,Alabama,South,2017,1.17,84,F
+OH,Ohio,Midwest,2017,1.25,80,F
+TX,Texas,South,2017,1.33,96,M
+WV,West Virginia,South,2017,1.58,84,M
+NM,New Mexico,West,2017,1.83,93,F
+FL,Florida,South,2017,1.92,114,M
+TX,Texas,South,2017,1.92,82,M
+FL,Florida,South,2018,1,81,M
+FL,Florida,South,2018,1,95,F
+TN,Tennessee,South,2018,1,90,F
+FL,Florida,South,2018,1.42,93,M
+VA,Virginia,South,2018,1.42,93,M
+CA,California,West,2018,1.5,80,M
+SC,South Carolina,South,2018,1.5,85,M
+SC,South Carolina,South,2018,1.5,91,M
+CA,California,West,2018,1.58,81,F
+OR,Oregon,West,2018,1.75,91,F
+IN,Indiana,Midwest,2019,1,85,F
+NC,North Carolina,South,2019,1,80,M
+NE,Nebraska,Midwest,2019,1,90,M
+NY,New York,Northeast,2019,1,86,F
+NY,New York,Northeast,2019,1,93,M
+AL,Alabama,South,2019,1.08,97,M
+FL,Florida,South,2019,1.17,79,M
+IA,Iowa,Midwest,2019,1.33,93,F
+AZ,Arizona,West,2019,1.5,69,F
+AZ,Arizona,West,2019,1.5,73,F
+CA,California,West,2019,1.5,88,M
+FL,Florida,South,2019,1.5,97,F
+SC,South Carolina,South,2019,1.5,87,M
+TX,Texas,South,2019,1.5,94,M
+GA,Georgia,South,2019,1.75,88,M
+IN,Indiana,Midwest,2019,1.75,94,F
+MS,Mississippi,South,2019,1.75,88,M
+NJ,New Jersey,Northeast,2019,1.75,71,F
+NJ,New Jersey,Northeast,2019,1.83,91,F
+OK,Oklahoma,South,2020,1.42,92,F
+CA,California,West,2020,1.83,84,M
+NC,North Carolina,South,2020,1.83,81,M
+FL,Florida,South,1998,2,89,F
+ME,Maine,Northeast,1998,2,84,M
+NM,New Mexico,West,1998,2,93,F
+PA,Pennsylvania,Northeast,1998,2,79,M
+TN,Tennessee,South,1998,2,93,M
+TX,Texas,South,1998,2,97,F
+UT,Utah,West,1998,2,84,M
+UT,Utah,West,1998,2.42,98,F
+MD,Maryland,South,1998,2.83,89,M
+FL,Florida,South,1999,2,90,F
+IL,Illinois,Midwest,1999,2,86,F
+IL,Illinois,Midwest,1999,2,90,M
+MD,Maryland,South,1999,2,93,M
+NC,North Carolina,South,1999,2,90,M
+NE,Nebraska,Midwest,1999,2,96,M
+OH,Ohio,Midwest,1999,2,91,M
+PA,Pennsylvania,Northeast,1999,2,89,M
+TN,Tennessee,South,1999,2,85,M
+CA,California,West,1999,2.5,76,M
+IL,Illinois,Midwest,1999,2.5,92,M
+GA,Georgia,South,2000,2,89,M
+IA,Iowa,Midwest,2000,2,80,M
+ID,Idaho,West,2000,2,100,F
+IL,Illinois,Midwest,2000,2,84,F
+KS,Kansas,Midwest,2000,2,85,M
+MT,Montana,West,2000,2,95,F
+NC,North Carolina,South,2000,2,82,M
+TX,Texas,South,2000,2,92,F
+OH,Ohio,Midwest,2000,2.5,86,M
+AZ,Arizona,West,2001,2,98,M
+FL,Florida,South,2001,2,89,M
+FL,Florida,South,2001,2,95,F
+MO,Missouri,Midwest,2001,2,98,M
+NY,New York,Northeast,2001,2,80,M
+TX,Texas,South,2001,2,93,M
+CO,Colorado,West,2002,2,93,M
+FL,Florida,South,2002,2,90,F
+IL,Illinois,Midwest,2002,2,81,M
+IL,Illinois,Midwest,2002,2,90,M
+NC,North Carolina,South,2002,2,84,F
+AZ,Arizona,West,2003,2,99,F
+NC,North Carolina,South,2003,2,90,M
+NJ,New Jersey,Northeast,2003,2,90,M
+NV,Nevada,West,2003,2,100,F
+TN,Tennessee,South,2003,2,90,F
+TX,Texas,South,2003,2,90,F
+TX,Texas,South,2003,2,100,M
+FL,Florida,South,2003,2.33,91,M
+FL,Florida,South,2003,2.83,86,M
+FL,Florida,South,2003,2.92,93,M
+CA,California,West,2004,2,90,F
+CA,California,West,2004,2,92,M
+FL,Florida,South,2004,2,81,M
+TN,Tennessee,South,2004,2,88,M
+FL,Florida,South,2004,2.42,90,M
+AL,Alabama,South,2005,2,96,F
+AZ,Arizona,West,2005,2,102,F
+CA,California,West,2005,2,87,M
+CA,California,West,2005,2,96,F
+CO,Colorado,West,2005,2,97,F
+KY,Kentucky,South,2005,2,93,M
+NJ,New Jersey,Northeast,2005,2,91,M
+TN,Tennessee,South,2005,2,87,M
+TX,Texas,South,2005,2,96,M
+WA,Washington,West,2005,2,84,M
+WI,Wisconsin,Midwest,2005,2,85,F
+LA,Louisiana,South,2006,2,102,M
+MS,Mississippi,South,2006,2,98,F
+NC,North Carolina,South,2006,2,83,F
+NC,North Carolina,South,2006,2,83,F
+TX,Texas,South,2006,2,94,F
+TX,Texas,South,2006,2,99,M
+CA,California,West,2007,2,98,M
+FL,Florida,South,2007,2,92,F
+IA,Iowa,Midwest,2007,2,88,M
+LA,Louisiana,South,2007,2,101,M
+OH,Ohio,Midwest,2007,2,95,F
+KY,Kentucky,South,2008,2,90,M
+NC,North Carolina,South,2008,2,90,F
+TX,Texas,South,2008,2,95,M
+VA,Virginia,South,2008,2,93,M
+KY,Kentucky,South,2009,2,90,F
+LA,Louisiana,South,2009,2,91,M
+PA,Pennsylvania,Northeast,2009,2,99,M
+LA,Louisiana,South,2010,2,92,F
+LA,Louisiana,South,2010,2,96,M
+MI,Michigan,Midwest,2010,2,85,F
+MO,Missouri,Midwest,2010,2,94,F
+NM,New Mexico,West,2010,2,93,M
+OH,Ohio,Midwest,2010,2,88,F
+OK,Oklahoma,South,2010,2,86,F
+TN,Tennessee,South,2010,2,84,M
+TX,Texas,South,2010,2,92,M
+TX,Texas,South,2010,2,92,F
+TX,Texas,South,2010,2,93,M
+TX,Texas,South,2010,2,95,M
+FL,Florida,South,2010,2.5,91,F
+ME,Maine,Northeast,2010,2.5,84,M
+TX,Texas,South,2010,2.5,88,M
+TX,Texas,South,2010,2.67,103,F
+TX,Texas,South,2010,2.75,91,M
+GA,Georgia,South,2011,2,92,F
+IN,Indiana,Midwest,2011,2,85,M
+KY,Kentucky,South,2011,2,85,M
+PA,Pennsylvania,Northeast,2011,2,87,M
+TX,Texas,South,2011,2,102,M
+VA,Virginia,South,2011,2,84,M
+AL,Alabama,South,2012,2,89,F
+CO,Colorado,West,2012,2,35,M
+MS,Mississippi,South,2012,2,93,F
+NC,North Carolina,South,2012,2,79,M
+NM,New Mexico,West,2012,2,91,M
+TN,Tennessee,South,2012,2,99,F
+FL,Florida,South,2013,2,92,M
+IL,Illinois,Midwest,2013,2,96,M
+IN,Indiana,Midwest,2013,2,95,M
+MI,Michigan,Midwest,2013,2,76,M
+MS,Mississippi,South,2013,2,94,M
+TX,Texas,South,2013,2,77,M
+WI,Wisconsin,Midwest,2013,2,90,M
+FL,Florida,South,2014,2,85,F
+GA,Georgia,South,2014,2,87,F
+TX,Texas,South,2014,2,95,F
+VA,Virginia,South,2014,2,89,F
+AR,Arkansas,South,2015,2,101,M
+MD,Maryland,South,2015,2,88,F
+TX,Texas,South,2015,2,98,F
+AZ,Arizona,West,2015,2.5,93,M
+FL,Florida,South,2016,2,90,M
+FL,Florida,South,2016,2,92,M
+MO,Missouri,Midwest,2016,2,95,M
+MS,Mississippi,South,2016,2,85,F
+NC,North Carolina,South,2016,2,74,F
+TX,Texas,South,2016,2,95,F
+TX,Texas,South,2016,2,100,M
+VA,Virginia,South,2016,2,71,F
+FL,Florida,South,2017,2,90,M
+TN,Tennessee,South,2017,2,91,M
+TX,Texas,South,2017,2,87,F
+UT,Utah,West,2017,2,105,M
+TX,Texas,South,2017,2.25,96,F
+AZ,Arizona,West,2017,2.92,104,F
+AL,Alabama,South,2018,2,86,F
+AZ,Arizona,West,2018,2,71,M
+CA,California,West,2018,2,95,M
+IN,Indiana,Midwest,2018,2,93,M
+KY,Kentucky,South,2018,2,95,F
+MO,Missouri,Midwest,2018,2,94,F
+MT,Montana,West,2018,2,81,M
+SC,South Carolina,South,2018,2,90,M
+TX,Texas,South,2018,2,90,F
+AL,Alabama,South,2019,2,90,M
+CA,California,West,2019,2,83,F
+CA,California,West,2019,2,93,F
+FL,Florida,South,2019,2,81,F
+FL,Florida,South,2019,2,86,M
+KS,Kansas,Midwest,2019,2,91,M
+KY,Kentucky,South,2019,2,95,F
+LA,Louisiana,South,2019,2,91,F
+NM,New Mexico,West,2019,2,108,F
+TX,Texas,South,2019,2,95,M
+TX,Texas,South,2019,2,98,M
+AL,Alabama,South,1998,3,94,F
+CA,California,West,1998,3,93,M
+CT,Connecticut,Northeast,1998,3,82,M
+GA,Georgia,South,1998,3,95,M
+UT,Utah,West,1998,3.83,98,F
+CA,California,West,1999,3,97,F
+IL,Illinois,Midwest,1999,3,90,M
+MD,Maryland,South,1999,3,92,M
+NC,North Carolina,South,1999,3,94,M
+TX,Texas,South,1999,3,91,F
+NV,Nevada,West,2000,3,84,M
+CA,California,West,2001,3,90,M
+CA,California,West,2001,3,98,F
+CA,California,West,2001,3,108,F
+FL,Florida,South,2001,3,90,M
+IN,Indiana,Midwest,2001,3,90,M
+LA,Louisiana,South,2001,3,88,F
+MO,Missouri,Midwest,2001,3,98,M
+TX,Texas,South,2001,3,97,M
+MO,Missouri,Midwest,2001,3.33,90,M
+CA,California,West,2002,3,102,F
+GA,Georgia,South,2002,3,85,F
+MI,Michigan,Midwest,2002,3,80,M
+AR,Arkansas,South,2003,3,91,M
+AR,Arkansas,South,2003,3,91,F
+CA,California,West,2003,3,100,M
+FL,Florida,South,2003,3,87,M
+TX,Texas,South,2003,3,96,F
+VA,Virginia,South,2003,3,80,M
+FL,Florida,South,2004,3,88,M
+FL,Florida,South,2004,3,93,M
+MS,Mississippi,South,2004,3,90,M
+NV,Nevada,West,2004,3,76,M
+TX,Texas,South,2004,3,90,M
+VA,Virginia,South,2004,3,85,F
+AR,Arkansas,South,2005,3,94,M
+TX,Texas,South,2005,3,99,F
+IN,Indiana,Midwest,2006,3,90,M
+MN,Minnesota,Midwest,2006,3,93,F
+TN,Tennessee,South,2006,3,90,M
+HI,Hawaii,West,2007,3,81,F
+TX,Texas,South,2007,3,94,F
+AZ,Arizona,West,2008,3,95,F
+AZ,Arizona,West,2008,3,106,F
+CO,Colorado,West,2008,3,88,M
+KS,Kansas,Midwest,2008,3,80,M
+NC,North Carolina,South,2008,3,92,F
+NJ,New Jersey,Northeast,2008,3,91,F
+TX,Texas,South,2008,3,96,M
+TX,Texas,South,2008,3.83,89,M
+LA,Louisiana,South,2009,3,86,F
+RI,Rhode?sland,Northeast,2009,3,81,M
+WV,West Virginia,South,2009,3,70,M
+AZ,Arizona,West,2010,3,102,M
+FL,Florida,South,2010,3,90,F
+FL,Florida,South,2010,3,93,M
+GA,Georgia,South,2010,3,93,F
+KY,Kentucky,South,2010,3,89,M
+OH,Ohio,Midwest,2010,3,88,F
+TN,Tennessee,South,2010,3,85,M
+TX,Texas,South,2010,3,97,M
+GA,Georgia,South,2011,3,96,M
+LA,Louisiana,South,2011,3,98,M
+MT,Montana,West,2011,3,93,M
+OK,Oklahoma,South,2011,3,99,M
+TX,Texas,South,2011,3,90,M
+TX,Texas,South,2011,3,98,M
+AR,Arkansas,South,2012,3,102,M
+AR,Arkansas,South,2012,3,102,M
+MS,Mississippi,South,2012,3,92,F
+TN,Tennessee,South,2012,3,99,M
+TX,Texas,South,2012,3,105,M
+WV,West Virginia,South,2012,3,87,F
+TN,Tennessee,South,2012,3.75,101,M
+AL,Alabama,South,2013,3,90,M
+FL,Florida,South,2013,3,92,M
+LA,Louisiana,South,2013,3,93,F
+MS,Mississippi,South,2013,3,91,M
+OK,Oklahoma,South,2013,3,88,M
+WA,Washington,West,2013,3,94,M
+AZ,Arizona,West,2014,3,96,M
+CA,California,West,2014,3,95,M
+SC,South Carolina,South,2014,3,91,M
+CA,California,West,2015,3,89,F
+ID,Idaho,West,2015,3,84,M
+FL,Florida,South,2016,3,94,M
+KY,Kentucky,South,2016,3,85,M
+LA,Louisiana,South,2016,3,93,M
+LA,Louisiana,South,2016,3,93,F
+MS,Mississippi,South,2016,3,81,F
+NC,North Carolina,South,2016,3,90,F
+OH,Ohio,Midwest,2016,3,85,M
+TX,Texas,South,2016,3,96,M
+AL,Alabama,South,2017,3,87,M
+CA,California,West,2017,3,90,F
+FL,Florida,South,2017,3,93,M
+FL,Florida,South,2017,3,95,F
+GA,Georgia,South,2017,3,70,M
+GA,Georgia,South,2017,3,97,M
+LA,Louisiana,South,2017,3,92,F
+NC,North Carolina,South,2017,3,90,F
+NV,Nevada,West,2017,3,84,M
+TX,Texas,South,2017,3,101,M
+IN,Indiana,Midwest,2018,3,90,F
+KY,Kentucky,South,2018,3,89,M
+KY,Kentucky,South,2018,3,91,M
+OK,Oklahoma,South,2018,3,90,M
+SC,South Carolina,South,2018,3,91,M
+TN,Tennessee,South,2018,3,87,M
+TX,Texas,South,2018,3,79,M
+AZ,Arizona,West,2019,3,84,F
+GA,Georgia,South,2019,3,93,F
+GA,Georgia,South,2019,3,95,F
+IN,Indiana,Midwest,2019,3,93,M
+TN,Tennessee,South,2019,3,90,M
+TN,Tennessee,South,2019,3,92,M
+TX,Texas,South,2019,3,90,M
+AR,Arkansas,South,2020,3,97,F
+KY,Kentucky,South,2020,3,90,F
+OK,Oklahoma,South,2020,3,94,M
+NC,North Carolina,South,1998,4,94,M
+NM,New Mexico,West,1998,4,93,M
+UT,Utah,West,1998,4.08,98,F
+OH,Ohio,Midwest,1999,4,70,M
+AZ,Arizona,West,2000,4,102,M
+OR,Oregon,West,2000,4,90,M
+TX,Texas,South,2000,4,100,F
+TX,Texas,South,2002,4,96,M
+AZ,Arizona,West,2003,4,99,F
+NE,Nebraska,Midwest,2003,4,81,M
+TX,Texas,South,2003,4,94,M
+NM,New Mexico,West,2004,4,79,F
+AZ,Arizona,West,2005,4,96,F
+OH,Ohio,Midwest,2005,4,89,M
+OK,Oklahoma,South,2005,4,93,M
+NC,North Carolina,South,2006,4,83,F
+TX,Texas,South,2006,4,102,M
+LA,Louisiana,South,2007,4,90,M
+SC,South Carolina,South,2007,4,88,M
+DE,Delaware,South,2008,4,92,M
+FL,Florida,South,2008,4,89,M
+KS,Kansas,Midwest,2008,4,80,F
+NV,Nevada,West,2008,4,90,M
+TX,Texas,South,2008,4,90,F
+AR,Arkansas,South,2009,4,90,F
+HI,Hawaii,West,2009,4,96,M
+TX,Texas,South,2009,4,96,F
+AL,Alabama,South,2010,4,95,M
+AL,Alabama,South,2011,4,96,M
+IN,Indiana,Midwest,2011,4,85,M
+TX,Texas,South,2011,4,100,F
+CO,Colorado,West,2012,4,35,M
+FL,Florida,South,2012,4,92,M
+WV,West Virginia,South,2012,4,89,F
+AL,Alabama,South,2013,4,91,M
+NC,North Carolina,South,2013,4,86,M
+HI,Hawaii,West,2014,4,84,F
+TX,Texas,South,2014,4,88,F
+NV,Nevada,West,2015,4,100,M
+SC,South Carolina,South,2015,4,97,M
+PA,Pennsylvania,Northeast,2016,4,97,F
+AL,Alabama,South,2018,4,91,F
+CT,Connecticut,Northeast,2018,4,93,M
+FL,Florida,South,2018,4,93,M
+MN,Minnesota,Midwest,2019,4,82,M
+TX,Texas,South,2019,4,86,M
+OK,Oklahoma,South,2020,4,94,F
+TX,Texas,South,2020,4,78,M
+TX,Texas,South,2020,4,96,M
+NM,New Mexico,West,1998,5,93,M
+PA,Pennsylvania,Northeast,1998,5,79,M
+UT,Utah,West,1998,5,98,F
+NM,New Mexico,West,1998,6,93,F
+UT,Utah,West,1998,6,98,F
+NM,New Mexico,West,1999,5,90,F
+WA,Washington,West,1999,14,71,F
+CA,California,West,2000,5,95,M
+TX,Texas,South,2000,6,100,M
+OK,Oklahoma,South,2000,12,106,M
+CA,California,West,2000,13,105,M
+NV,Nevada,West,2001,5,92,M
+OH,Ohio,Midwest,2001,10,80,F
+IN,Indiana,Midwest,2002,5,94,M
+NV,Nevada,West,2002,5,101,M
+MI,Michigan,Midwest,2002,6,90,M
+CA,California,West,2003,5,100,M
+TX,Texas,South,2003,5,91,M
+NJ,New Jersey,Northeast,2004,10,81,M
+NJ,New Jersey,Northeast,2005,5,89,M
+NJ,New Jersey,Northeast,2005,6,89,M
+AR,Arkansas,South,2005,7,86,M
+OK,Oklahoma,South,2005,7,93,M
+NC,North Carolina,South,2005,8,76,M
+LA,Louisiana,South,2005,9,90,F
+NJ,New Jersey,Northeast,2005,11,89,M
+OK,Oklahoma,South,2006,5,97,F
+OK,Oklahoma,South,2006,6,97,F
+MO,Missouri,Midwest,2006,9,97,M
+AZ,Arizona,West,2006,10,100,M
+SD,South Dakota,Midwest,2007,5,83,M
+KY,Kentucky,South,2007,8,80,M
+KY,Kentucky,South,2007,11,80,M
+CO,Colorado,West,2008,5,88,F
+AZ,Arizona,West,2008,6,106,M
+AR,Arkansas,South,2009,5,90,M
+TX,Texas,South,2009,14,88,M
+KY,Kentucky,South,2010,5,89,M
+GA,Georgia,South,2010,6,95,F
+OH,Ohio,Midwest,2011,8,100,M
+TN,Tennessee,South,2012,5.25,101,M
+MI,Michigan,Midwest,2013,5,87,M
+WA,Washington,West,2013,5,92,M
+DC,District Of Columbia,South,2013,7,92,M
+CA,California,West,2013,14,87,F
+CA,California,West,2014,5,87,M
+IL,Illinois,Midwest,2014,5,86,M
+MI,Michigan,Midwest,2014,5,77,M
+TX,Texas,South,2015,5,98,M
+AL,Alabama,South,2017,5,93,M
+AR,Arkansas,South,2017,5,88,M
+CT,Connecticut,Northeast,2018,5,87,M
+MO,Missouri,Midwest,2018,5,95,F
+OK,Oklahoma,South,2018,5,81,M
+NY,New York,Northeast,2018,11,91,F
+SC,South Carolina,South,2019,13,88,F
