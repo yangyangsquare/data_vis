@@ -1,5 +1,5 @@
 :root {
-  --main-board-color: rgb(255, 127, 80);
+  --main-board-color: rgba(255, 127, 80, 0);
   --main-page-margin: 10px;
 }
 /* Style for our header texts
@@ -88,7 +88,8 @@ p {
   padding: 10px;
   width: 80%;
   margin: 30px;
-
+  position: absolute;
+  top: -400px;
   float: left;
   background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
   background: rgba(255, 255, 255, 0.7);	 
@@ -96,14 +97,15 @@ p {
 }
 
 #barChart_container {
-  width: 250px;
+  width: 200px;
   height: 520px;
-  width: 45%;
+  /* width: 45%; */
   margin: 10px;
-
-  float: left;
+  position: absolute;
+  top: -200px;
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid var(--main-board-color);
+  
 }
 #barChart {
   text-align: center;
@@ -113,12 +115,14 @@ p {
 * --------------------------------------- */
 
 #pieChart_container {
-  width: 250px;
+  width: 200px;
   height: 520px;
-  width: 45%;
+  /* width: 45%; */
   margin: 10px;
-
-  float: left;
+  position: absolute;
+  left:900px;
+  top: -200px;
+  /* float: inline-end; */
   background-color: rgba(17, 190, 147, 0);
   border: 1px solid var(--main-board-color);
 }
@@ -146,19 +150,21 @@ p {
   padding: 10px;
   width: 80%;
   margin: 30px;
-
-  float: left;
+  position: absolute;
+  top: -400px;
   background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
   background: rgba(255, 255, 255, 0.7);	 
   border: 1px solid var(--main-board-color); 
 }
 
 #statesvg {
-  width: 500px;
+  width: 1000px;
   height: 650px;
-  width: 55%;
-  margin: 10px;
-
+  /* width: 55%; */
+  /* margin: 0px; */
+  position: absolute;
+  top: -300px;
+  
   float: left;
   background-color: rgba(143, 18, 18, 0);
   border: 1px solid var(--main-board-color);
@@ -166,9 +172,11 @@ p {
 #usMap_container {
   width: 500px;
   height: 650px;
-  width: 40%;
-  margin: 10px;
-
+  /* width: 40%; */
+  /* margin: 10px; */
+  position: absolute;
+  top: -300px;
+  left:1000px;
   float: left;
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid var(--main-board-color);
