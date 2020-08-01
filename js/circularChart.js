@@ -8,8 +8,8 @@ function cirChart_func () {
         y = d3.scaleRadial().range([innerRadius, outerRadius])
             .domain([0, 130]);
             
-    var svg_sce2 = d3.select("#usMap").append("svg")
-            .attr("id", "usMap_svg")
+    var svg_sce2 = d3.select("#circular").append("svg")
+            .attr("id", "circular_svg")
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom)
           .append("g")
@@ -86,17 +86,10 @@ function cirChart_func () {
         var tip = '',
             i   = 0;
 
-    // console.log(data)
-
         for (var key in data) {
 
             if (key == 'color') { continue; }
-
-            // if value is a number, format it as a percentage
             var value = data[key];
-
-            // leave off 'dy' attr for first tspan so the 'dy' attr on text element works. The 'dy' attr on
-            // tspan effectively imitates a line break.
             if (i === 0) tip += '<tspan x="-5.4em">' + value + '</tspan>';
              else tip += '<tspan x="-5.4em" dy="1.2em">' + key + ': ' + value + '</tspan>';
             i++;
@@ -121,10 +114,13 @@ function usMap_func () {
         })
     }, function(error, raw) {
         if (error) throw error;
-        uStates.draw("#statesvg", sampleData, tooltipHtml);
+        var svg = d3.select("#usMap").append("svg")
+                .attr("width", 400)
+                .attr("height",500);
+        uStates.draw(svg, sampleData, tooltipHtml);
          // draw legend
          var all_case = [">60 deaths", "31-60 deaths", "21-30 deaths", "11-20 deaths", "6-10 deaths", "1-5 death(s)", "0 death"];
-         var legend = d3.select("#statesvg").append("g").selectAll(".legend")
+         var legend = d3.select("usMap").append("g").selectAll(".legend")
              .data(all_case)
              .enter().append("g")
              .attr("class", "legend")
@@ -132,16 +128,16 @@ function usMap_func () {
 
          // // draw legend colored rectangles
          legend.append("rect")
-             .attr("x", +d3.select("#statesvg").attr("width")-20)
-             .attr("y", +d3.select("#statesvg").attr("height")/2-100)
+             .attr("x", +d3.select("#usMap").attr("width")-20)
+             .attr("y", +d3.select("#usMap").attr("height")/2-100)
              .attr("width", 10)
              .attr("height", 10)
              .attr("fill", function(d, i) { return color[i]});
  
          // // draw legend text
          legend.append("text")
-             .attr("x", +d3.select("#statesvg").attr("width"))
-             .attr("y", +d3.select("#statesvg").attr("height")/2-89)
+             .attr("x", +d3.select("#usMap").attr("width"))
+             .attr("y", +d3.select("#usMap").attr("height")/2-89)
              .text(function(d) { return d;})
  
     });
@@ -157,9 +153,6 @@ function usMap_func () {
 	}
 }
 
-
-usMap_func ();
-
-
+// usMap_func ();
 cirChart_func ();
 

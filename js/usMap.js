@@ -1,162 +1,113 @@
 function usMap_func () {
-    var margin = {top: 10, right: 50, bottom: 60, left: 50},
-    width = 850 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom,
-    y = d3.scaleLinear().rangeRound([height, 0]).nice(),
-    x = d3.scaleBand().rangeRound([0, width]).paddingInner(0.05).align(0.1);
+    var margin = {top: 50, right: 50, bottom: 100, left: 50},
+        width = 850 - margin.left - margin.right,
+        height = 650 - margin.top - margin.bottom;
 
-    var svg = d3.select("#usMap").append("svg")
-        .attr("id", "usMap_svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-      .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-    // uStatePaths.forEach(function (s) {
-    //     sampleData[s.id] = {deaths: 0, 
-    //         deaths_million: 0,
-    //         rank_in_deaths_million: 0,
-    //         color: "#bab0ac"}
-    // })
-    d3.csv("data/2_circular_barplot.csv", function(d) {
-        uStatePaths.forEach(function (s) {
-            if (d.state == s.n) { 
-                sampleData[s.id] = {deaths: +d.deaths, 
-                    deaths_million: +d.deaths_million,
-                    rank_in_deaths_million: +d.rank_in_deaths_million,
-                    color: color[+d.color]}
-            }
-        })
-    }, function(error, raw) {
-        if (error) throw error;
-        uStates.draw("#usMap", sampleData, tooltipHtml);
-    });
+        // D3 Projection
+        var projection = d3.geoAlbersUsa()
+        .translate([width / 2, height / 2]) // translate to center of screen
+        .scale([1000]); // scale things down so see entire US
 
-    function tooltipHtml(n, d){	/* function to create html content string in tooltip div. */
-		return "<h4>"+n+"</h4><table>"+
-			"<tr><td>Deaths</td><td>"+(d.deaths)+"</td></tr>"+
-			"<tr><td>Deaths/million</td><td>"+(d.deaths_million)+"</td></tr>"+
-			"<tr><td>Rank in Deaths/million</td><td>"+(d.rank_in_deaths_million)+"</td></tr>"+
-			"</table>";
-	}
-}
+        // Define path generator
+        var path = d3.geoPath() // path generator that will convert GeoJSON to SVG paths
+        .projection(projection); // tell path generator to use albersUsa projection
 
-
-
-function cirChart_func () {
-    var margin = {top: 150, right: 100, bottom: 150, left: 100},
-        width = 1920 * 0.5 - margin.left - margin.right,
-        height = 1080 - margin.top - margin.bottom,
-        innerRadius = 180,
-        outerRadius = Math.min(width, height) / 2,
-        y = d3.scaleRadial().range([innerRadius, outerRadius])
-            .domain([0, 130]);
-
-
-    d3.csv("data/2_circular_barplot.csv", function(d) {
-        d.deaths = +d.deaths;
-        // console.log(d.deaths)
-        return d;
-    }, function(error, data) {
-        if (error) throw error;
-
-        var x = d3.scaleBand().range([0, 2 * Math.PI]).align(0)
-            .domain(data.map(function(d) { return d.state; }));
-
-
-        svg_sce2.append("g")
-          .selectAll("path")
-            .data(data)
-            .enter()
-            .append("path")
-            .attr("fill", function(d) { return color[d['color']]; })
-            .attr("d", d3.arc()     // imagine your doing a part of a donut plot
-                .innerRadius(innerRadius)
-                .outerRadius(function(d) { return y(d['deaths']); })
-                .startAngle(function(d) { return x(d.state); })
-                .endAngle(function(d) { return x(d.state) + x.bandwidth(); })
-                .padAngle(0.05)
-                .padRadius(innerRadius)).call(toolTip_circular)
-
-        svg_sce2.append("g")
-                .selectAll("g")
-                .data(data)
-                .enter()
-                .append("g")
-                .attr("text-anchor", function(d) { return (x(d.state) + x.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "end" : "start"; })
-                .attr("transform", function(d) { return "rotate(" + ((x(d.state) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")"+"translate(" + (y(d['deaths'])+10) + ",0)"; })
-                .append("text")
-                .text(function(d){return(d.state)})
-                .attr("transform", function(d) { return (x(d.state) + x.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "rotate(180)" : "rotate(0)"; })
-                .style("font-size", "20px")
-                .attr("alignment-baseline", "middle").call(toolTip_circular)
-
-    });
-
-    function toolTip_circular(selection) {
-
-        // add tooltip (svg circle element) when mouse enters label or slice
-        selection.on('mouseenter', function (data) {
-
-            svg_sce2.append('text')
-                .attr('class', 'toolCircle')
-                .attr('dy', "-1.2em") // hard-coded. can adjust this to adjust text vertical alignment in tooltip
-                .html(toolTipHTML_circular(data)) // add text to the circle.
-                .style('font-size', '1.5em')
-                .style('text-anchor', 'left'); // centres text in tooltip
-
-            svg_sce2.append('circle')
-                .attr('class', 'toolCircle')
-                .attr('r', innerRadius * 0.85) // radius of tooltip circle
-                .style('fill', function(d) { return color[data['color']]; }) // colour based on category mouse is over
-                .style('fill-opacity', 0.35);
-
-        });
-
-        // remove the tooltip when mouse leaves the slice/label
-        selection.on('mouseout', function () {
-            d3.selectAll('.toolCircle').remove();
-        });
-    }
-
-    // function to create the HTML string for the tool tip. Loops through each key in data object
-    // and returns the html string key: value
-    function toolTipHTML_circular(data) {
-
-        var tip = '',
-            i   = 0;
-
-    // console.log(data)
-
-        for (var key in data) {
-
-            if (key == 'color') { continue; }
-
-            // if value is a number, format it as a percentage
-            var value = data[key];
-
-            // leave off 'dy' attr for first tspan so the 'dy' attr on text element works. The 'dy' attr on
-            // tspan effectively imitates a line break.
-            if (i === 0) tip += '<tspan x="-5.4em">' + key + ': ' + value + '</tspan>';
-            else tip += '<tspan x="-5.4em" dy="1.2em">' + key + ': ' + value + '</tspan>';
-            i++;
+        //Create SVG element and append map to the SVG
+        var svg = d3.select("#usMap")
+            .append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom);
+        var tooltip = d3.select("body").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
+        // Load in my states data!
+        d3.csv("data/2_circular_barplot.csv", function(data) {
+        var dataArray = [];
+        for (var d = 0; d < data.length; d++) {
+            dataArray.push(parseFloat(data[d].color))
         }
 
-        return tip;
-    }
+        // Load GeoJSON data and merge with states data
+        d3.json("us-states.json", function(json) {
 
+        // Loop through each state data value in the .csv file
+        for (var i = 0; i < data.length; i++) {
+            // Find the corresponding state inside the GeoJSON
+            for (var j = 0; j < json.features.length; j++) {
+                var jsonState = json.features[j].properties.name;
+                var d = data[i]
+                if ( d.State == jsonState) {
+                    // Copy the data value into the JSON
+                    json.features[j].properties.color = d.color;
+                    json.features[j].properties.Deaths = d.Deaths;
+                    json.features[j].properties.Deaths_million = d["Deaths/million"];
+                    json.features[j].properties.Deaths_million_rank = d["Deaths/million rank"];
+                    // Stop looking through the JSON
+                    break;
+                }
+            }
+        }
+
+        // Bind the data to the SVG and create one path per GeoJSON feature
+        svg.selectAll("path")
+            .data(json.features)
+            .enter()
+            .append("path")
+            .attr("d", path)
+            .style("stroke", "#fff")
+            .style("stroke-width", "1")
+            .style("fill", function(d) { 
+                // console.log(d.properties.value)
+                return color[d.properties.color] })
+            .on("mouseover", function(d) {
+                tooltip.transition()
+                    .duration(200)
+                    .style("opacity", .9);
+                tooltip.html("<h4>" + d.properties.name + "</h4><table>"
+                    + "<tr><td>Deaths<td>" + d.properties.Deaths + "</tr></td>"
+                    + "<tr><td>Deaths/million<td>" + d.properties.Deaths_million + "</tr></td>"
+                    + "<tr><td>Deaths/million rank<td>" + d.properties.Deaths_million_rank + "</tr></td>")
+                    .style("left", (d3.event.pageX + 5) + "px")
+                    .style("top", (d3.event.pageY - 28) + "px");
+            })
+            .on("mouseout", function(d) {
+                tooltip.transition()
+                    .duration(500)
+                    .style("opacity", 0);
+            });
+
+        // draw legend
+        var all_case = [">60 deaths", "31-60 deaths", "21-30 deaths", "11-20 deaths", "6-10 deaths", "1-5 death(s)", "0 death"];
+        var legend = svg.append("g").selectAll(".legend")
+            .data(all_case)
+            .enter().append("g")
+            .attr("class", "legend")
+            .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+        // // draw legend colored rectangles
+        legend.append("rect")
+            .attr("x", width-150)
+            .attr("y", height-10)
+            .attr("width", 10)
+            .attr("height", 10)
+            .attr("fill", function(d, i) { return color[i]});
+
+        // // draw legend text
+        legend.append("text")
+            .attr("x", width-150+15)
+            .attr("y", height-10+10)
+            .text(function(d) { return d;})
+    
+         // annotation
+        var arrow_pos = [350, 400],
+            angle = 60,
+            line_length = 150,
+            textbox_length = 400,
+            annotation_text = "Southern states see the most deaths.";
+        annotation(svg, arrow_pos, angle, line_length, textbox_length, annotation_text)
+        });
+    });
 }
 
 usMap_func ();
-
-
-// var svg_sce2 = d3.select("#circularChart").append("svg")
-//     .attr("id", "circularChart_svg")
-//     .attr("width", 1920 - 200)
-//     .attr("height", 1080 - 300)
-//     .append("g")
-//     .attr("transform", "translate(430, 370)")
-
-
-
-// cirChart_func ();
 

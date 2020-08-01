@@ -1,8 +1,8 @@
 
 function barChart_func () {
-    var margin = {top: 10, right: 50, bottom: 60, left: 50},
-        width = 850 - margin.left - margin.right,
-        height = 500 - margin.top - margin.bottom,
+    var margin = {top: 100, right: 50, bottom: 60, left: 50},
+        width = 700 - margin.left - margin.right,
+        height = 600 - margin.top - margin.bottom,
         y = d3.scaleLinear().rangeRound([height, 0]).nice(),
         x = d3.scaleBand().rangeRound([0, width]).paddingInner(0.05).align(0.1);
 
@@ -103,11 +103,19 @@ function barChart_func () {
 
         svg.append("text")
             .attr("class", "label")
-            .attr("x", 50)
-            .attr("y", -15)
-            .style("text-anchor", "end")
-            .attr("transform", "rotate(90)")
+            .attr("x", -50)
+            .attr("y", -30)
+            .style("text-anchor", "start")
+            .attr("transform", "rotate(-90)")
             .text("Deaths");
+
+        // annotation
+        var arrow_pos = [530, 60],
+            angle = -35,
+            line_length = 230,
+            textbox_length = 515,
+            annotation_text = "The fatality trend is growing in the last 5 years.";
+        annotation(svg, arrow_pos, angle, line_length, textbox_length, annotation_text)
 
     });
 

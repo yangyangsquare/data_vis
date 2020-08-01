@@ -37,10 +37,6 @@ text {
   shape-rendering: crispEdges;
 }
 
-.dot {
-  stroke: #000;
-}
-
 .tooltip h4{
   margin:0;
   font-size:16px;
@@ -63,4 +59,21 @@ text {
   stroke: lightgrey;
   stroke-opacity: 0.7;
   shape-rendering: crispEdges;
+}
+
+.buttons {
+  margin-top: 70px;
+}
+
+div.controls {
+  float: right;
+  margin-right: 193px;
+  margin-top: 100px;
+}
+
+label {
+  font-size: 1em;
+  font-style: italic;
+  -webkit-filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.3) );
+  filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.25) );
 }
