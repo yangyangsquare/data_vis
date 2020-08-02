@@ -12,7 +12,9 @@ function scaPlot_func () {
 
         yValue = function(d) { return d.temperature;}, // data -> value
         yScale = d3.scaleLinear().range([height, 0]), // value -> display
-        yMap = function(d) { return yScale(yValue(d));}; // data -> display
+        yMap = function(d) { return yScale(yValue(d));}, // data -> display
+
+        annotation_class = "scatter_annotation";
 
     xScale.domain([0, 16]);
     yScale.domain([30, 120]);
@@ -29,6 +31,7 @@ function scaPlot_func () {
             .style("opacity", 0);
     
     var xAxis = d3.axisBottom()
+        // .attr("class", "scatter_x")
         .scale(xScale)
         .ticks(10);
 
@@ -53,7 +56,7 @@ function scaPlot_func () {
             .tickFormat("")
             )
      // x-axis
-     svg.append("g")
+     a = svg.append("g")
          .attr("class", "x axis")
          .attr("transform", "translate(0," + height + ")")
          .call(xAxis)
@@ -79,26 +82,6 @@ function scaPlot_func () {
          .style("text-anchor", "end")
          .text("Temperature (F)");
 
-    // function dataSwap(datasetGroup) {
-
-    //     eachDataGroup = data.filter(function(d) { return d.region == datasetGroup })
-    //     eachDataGroup.sort(function(a, b) { return a.x - b.x });
-    //     svg.selectAll(".circleGroups")
-    //         .data(eachDataGroup)
-    //         .transition()
-    //         .delay(function(d, i) { return i*4; })
-    //         .attr("transform",function(d) { return "translate(" + xScale(d.age) + "," + yScale(d.temperature) + ")" })
-    
-    //     svg.selectAll(".circleGroups")
-    //         .select("circle")
-    //         .transition()
-    //         .delay(function(d, i) { return i*1; })
-    //         .style("fill", function(d, i) { return color[cMap[d.region]]; })
-    
-    //     d3.select(".title")
-    //         .text("Group " + datasetGroup)
-    // }
-
     d3.csv("data/3_scatterplot.csv", function(d) {
         d.age = +d.age;
         d.temperature = +d.temperature;
@@ -107,68 +90,6 @@ function scaPlot_func () {
         if (error) throw error;
         window.data = data;
         var groups = d3.set(data.map(function(d) { return d.region})).values();
-
-        // d3.select(".buttons")
-        //     .selectAll("button")
-        //     .data(groups)
-        //     .enter().append("button")
-        //     .text(function(d) { return d + " Region"; })
-        //     .on("click", function(d) {
-
-        //         dataSwap(d);
-        //     })
-
-        // groupOneData = data.filter(function(d) { return d.region == "South" })
-        // groupOneData.sort(function(a, b) { return a.x - b.x });
-        
-        // var circleGroups = svg.selectAll(".circleGroups")
-        //     .data(groupOneData)
-        // .enter().append("g")
-        // .attr("class", "circleGroups")
-        //     .attr("transform",function(d) { 
-        //         return "translate(" + xScale(d.age) + "," + yScale(d.temperature) + ")" })
-        //     .on("mouseenter", function(d) {
-
-        //         d3.select(this)
-        //             .append("text")
-        //             .attr("dx", 5)
-        //             .attr("dy", 10)
-        //             .text("(" + d.age + "," + d.temperature + ")")
-
-        //         d3.selectAll("circle")
-        //         .style("fill-opacity", .5);
-
-        //         d3.select(this)
-        //         .select("circle")
-        //         .transition()
-        //         .ease(d3.easeElastic)
-        //         .attr("r", 2)
-        //         .style("fill-opacity", 1);
-        //     })
-        //     .on("mouseleave", function(d) {
-
-        //         d3.select(this)
-        //         .select("text")
-        //         .transition()
-        //         .style("opacity", 0)
-        //         .transition()
-        //         .remove();
-
-        //         d3.select(this)
-        //         .select("circle")
-        //         .transition()
-        //         .ease(d3.easeElastic)
-        //         .attr("r", 2)
-
-        //         d3.selectAll("circle")
-        //         .style("fill-opacity", 1);
-        //     })
-
-        // var radiusSize = 5;
-
-        // circleGroups.append("circle")
-        //     .attr("r", radiusSize)
-        //     .style("fill", function(d, i) { return color[cMap[d.region]]; })
         
         // draw dots
         svg.selectAll(".dot")
@@ -199,12 +120,15 @@ function scaPlot_func () {
             });
         
         // annotation
-        var arrow_pos = [85, 300],
-            angle = 120,
-            line_length = 260,
+        var arrow_pos1 = [100, 290],
+            arrow_pos2 = [520, 300],
+            angle1 = 135,
+            angle2 = 60,
+            line_length1 = 330,
+            line_length2 = 260,
             textbox_length = 580,
             annotation_text = "Younger children (< 2yr) are more susceptible to heat.";
-        annotation(svg, arrow_pos, angle, line_length, textbox_length, annotation_text)
+        annotation(svg, arrow_pos1, angle1, line_length1, textbox_length, annotation_text, annotation_class)
 
         d3.select("#logCheckbox")
             .on("click", function() {
@@ -212,25 +136,24 @@ function scaPlot_func () {
                     xScale = d3.scaleLog()
                         .base(2).range([0, width])
                         .domain([0.03125, 32]);
-                    d3.selectAll(".annotation")
-                        .style("opacity", 0)
+                    d3.selectAll("."+annotation_class).remove();
+                    annotation(svg, arrow_pos2, angle2, line_length2, textbox_length, annotation_text, annotation_class);
                 } else {
                     xScale = d3.scaleLinear()
                         .range([0, width])
                         .domain([0, 16]);
-                    d3.selectAll(".annotation")
-                        .style("opacity", 1)
+                    d3.selectAll("."+annotation_class).remove();
+                    annotation(svg, arrow_pos1, angle1, line_length1, textbox_length, annotation_text, annotation_class);
                 }
                 xAxis.scale(xScale);
-                d3.selectAll("g.x.axis")
-                    .transition()
+                a.transition()
                     .duration(100)
                     .call(xAxis);
                 
                 d3.selectAll("circle")
                     .transition()
-                    .delay(400)
-                    .duration(600)
+                    // .delay(400)
+                    .duration(500)
                     .attr("cx", function(d) { return xScale(d.age); })
                 })
         

@@ -1,5 +1,5 @@
 :root {
-  --main-board-color: rgba(255, 127, 80, 0.952);
+  --main-board-color: rgba(255, 127, 80, 0);
   --main-page-margin: 10px;
 }
 /* Style for our header texts
@@ -11,11 +11,20 @@ h1 {
 	margin:0;
 	padding:0;
 }
-p {
+h2 {
   margin: 0;
-  color: rgb(247, 0, 0);
   padding: 0;
   font-size: 1.7em;
+}
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.7em;
+}
+li {
+  margin: 0;
+  padding: 0;
+  font-size: 1.4em;
 }
 
 /* Centered texts in each section
@@ -51,23 +60,24 @@ p {
 }
 #title_text {
 	top: 5%;
-	left: 3%;
-	position: relative;
+	left: 5%;
+  position: relative;
+  width: 1600px;
+  padding: 2% 3% 2% 3%;
+  background: rgba(255, 255, 255, 0.356);
 }
+
 #title_text h1,h3 {
 	padding: 0;
 	margin: 0;
 }
 /* About the Visualization
 * --------------------------------------- */
-#about {
-	background-image: url(../imgs/background.jpeg);
-	padding: 3% 3% 3% 3%;
-}
 #background_bw {
 	background-image: url(../imgs/background.jpeg);
 	padding: 3% 3% 3% 3%;
 }
+
 /* Bar Chart Page
 * --------------------------------------- */
 #barChart_title {
@@ -92,9 +102,6 @@ p {
   position: absolute;
   top: -400px;
   float: left;
-  
-  background: rgb(204, 204, 204, 0); /* Fallback for older browsers without RGBA-support */
-  background: rgba(255, 255, 255, 0);	 
   border: 1px solid var(--main-board-color); 
   
 }
@@ -105,8 +112,7 @@ p {
   /* width: 45%; */
   margin: 10px;
   position: absolute;
-  top: -280px;
-  background-color: rgba(255, 255, 255, 0);
+  top: -250px;
   border: 1px solid var(--main-board-color);
   
 }
@@ -126,7 +132,6 @@ p {
   left:750px;
   top: -200px;
   /* float: inline-end; */
-  background-color: rgba(17, 190, 147, 0);
   border: 1px solid var(--main-board-color);
 }
 #pieChart {
@@ -155,9 +160,7 @@ p {
   margin: 30px;
   position: absolute;
   top: -400px;
-  float: left;
-  background: rgb(204, 204, 204, 0); /* Fallback for older browsers without RGBA-support */
-  background: rgba(255, 255, 255, 0);	 
+  float: left; 
   border: 1px solid var(--main-board-color); 
 }
 
@@ -170,7 +173,6 @@ p {
   top: -300px;
   left:800px;  
   float: left;
-  background-color: rgba(143, 18, 18, 0);
   border: 1px solid var(--main-board-color);
 }
 #circular {
@@ -182,10 +184,9 @@ p {
   /* width: 40%; */
   /* margin: 10px; */
   position: absolute;
-  top: -300px;
+  top: -250px;
   /* left:1000px; */
   float: left;
-  background-color: rgba(255, 255, 255, 0);
   border: 1px solid var(--main-board-color);
 }
 #usMap {
@@ -214,8 +215,6 @@ p {
   margin: 30px;
 
   float: left;
-  background: rgb(204, 204, 204, 0); /* Fallback for older browsers without RGBA-support */
-  background: rgba(255, 255, 255, 0);	 
   border: 1px solid var(--main-board-color); 
 }
 
@@ -226,7 +225,6 @@ p {
   margin: 10px;
 
   float: left;
-  background-color: rgba(255, 255, 255, 0);
   border: 1px solid var(--main-board-color);
 }
 #circularChart{
@@ -255,8 +253,6 @@ p {
   margin: 30px;
 
   float: left;
-  background: rgba(204, 204, 204, 0); /* Fallback for older browsers without RGBA-support */
-  background: rgba(255, 255, 255, 0);	 
   border: 1px solid var(--main-board-color); 
 }
 
@@ -267,7 +263,6 @@ p {
   margin: 10px;
 
   float: left;
-  background-color: rgba(255, 255, 255, 0);
   border: 1px solid var(--main-board-color);
 }
 
@@ -278,8 +273,6 @@ p {
   margin-left: 1275px;
   margin-top: 0px;
   margin-bottom: -20px;
-  background: rgba(204, 204, 204, 0); /* Fallback for older browsers without RGBA-support */
-  background: rgba(255, 255, 255, 0);	 
   border: 1px solid var(--main-board-color); 
 }
 
@@ -308,9 +301,7 @@ p {
   width: 90%;
   margin: 10px;
 
-  float: left;
-  background: rgb(204, 204, 204, 0); /* Fallback for older browsers without RGBA-support */
-  background: rgba(255, 255, 255, 0);	 
+  float: left; 
   border: 1px solid var(--main-board-color); 
 }
 
@@ -321,54 +312,96 @@ p {
   margin: 10px;
 
   float: left;
-  background-color: rgba(255, 255, 255, 0);
   border: 1px solid var(--main-board-color);
 }
 #donutChart {
   text-align: center;
 }
-/* Findings
-* --------------------------------------- */
-#analytics{
-	background-image: url(../imgs/analytics.jpg);
-	padding: 3% 60% 6% 6%;
-}
+
 /* References
 * --------------------------------------- */
 #acks {
-	background-image: url(../imgs/table.jpg);
+	background-image: url(../imgs/ref.jpg);
 	padding: 3% 52% 6% 6%;
 }
-#content_div, #acks_div {
-	padding: 10px;
-    background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
-    background: rgba(255, 255, 255, 0.6);	
-}
-#content_div, #acks_div h1,h2,h3,p {
-    font-weight: bold;
-    color: rgb(46, 37, 119);
-}
-/* Style for links */
-#acks_div ul {
-	list-style-image: url('../imgs/link.ico')
-}
-#acks_div a {
-	color: rgba(35, 35, 35, 0.8);
-	text-decoration:none;
-	border-bottom: 2px solid #ef8b80;
-	box-shadow: inset 0 -4px 0 #ef8b80;
-	transition: background 0.1s cubic-bezier(.33,.66,.66,1);
-}
-#acks_div a:hover {
-  	background: #ef8b80;
-} 
 
-#emphasize {
-	color: green;
-	font-style: bolder;
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
 }
-/* Bottom menu
-* --------------------------------------- */
-#infoMenu li a {
-	color: #000;
+
+/* Add shadow effect to chart. If you don't like it, get rid of it. */
+svg {
+  -webkit-filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.3) );
+  filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.25) );
 }
+
+/*Styling for the lines connecting the labels to the slices*/
+polyline{
+  opacity: .3;
+  stroke: black;
+  stroke-width: 2px;
+  fill: none;
+}
+
+/* Make the percentage on the text labels bold*/
+text tspan {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* In biology we generally italicise species names. */
+text {
+  font-size: 1em;
+  font-style: italic;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.tooltip h4{
+  margin:0;
+  font-size:16px;
+}
+
+.tooltip {
+  background:rgba(0,0,0,0.9);
+  position: absolute;
+  pointer-events: none;
+  border:1px solid grey;
+  border-radius:5px;
+  font-size:12px;
+  width:auto;
+  padding:4px;
+  color:white;
+  opacity:0;
+}
+
+.grid line {
+  stroke: lightgrey;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
+}
+
+.buttons {
+  margin-top: 70px;
+}
+
+div.controls {
+  float: right;
+  margin-right: 193px;
+  margin-top: 100px;
+}
+
+label {
+  font-size: 1em;
+  font-style: italic;
+  -webkit-filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.3) );
+  filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.25) );
+}
+

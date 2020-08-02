@@ -82,7 +82,6 @@ function barChart_func () {
             .attr("class", "x axis")
             .attr("transform", "translate(0," + height + ")")
             .call(d3.axisBottom(x))
-            // .text("Year")
           .selectAll("text")
             .attr("y", -5)
             .attr("x", 10)

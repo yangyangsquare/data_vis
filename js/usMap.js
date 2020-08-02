@@ -103,7 +103,7 @@ function usMap_func () {
             angle = 60,
             line_length = 150,
             textbox_length = 400,
-            annotation_text = "Southern states see the most deaths.";
+            annotation_text = "16% deaths in US occurred in Taxes.";
         annotation(svg, arrow_pos, angle, line_length, textbox_length, annotation_text)
         });
     });
